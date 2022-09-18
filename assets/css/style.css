@@ -29,7 +29,7 @@ nav {
     right: 0px;
 }
 #logo-div {
-    width: 55%;
+    width: 35%;
     height: 75px;
     display: inline-block;
 }
@@ -47,7 +47,7 @@ nav {
     font-size: 110%;
     letter-spacing: 4px;
     float: right;
- }
+}
 #menu li {
     list-style-type: none;
     margin-right: 30px;
@@ -225,6 +225,9 @@ footer {
 /* Media Queries */
 /* Larger and medium-sized screens from 1200px downward */
 @media screen and (max-width: 1200px) {
+    nav {
+        width: 60%;
+    }
     #club-ethos {
         width: 65%;
         height: 1200px;
@@ -254,6 +257,10 @@ footer {
         clear: both;
         height: 150px;
         padding: 0;
+    }
+    /* Gallery */
+    #photos {
+        column-count: 3;
     }
 }
 
@@ -298,3 +305,9 @@ footer {
         text-align: center;
         padding: 0 20px;
     }
+}
+@media screen and (max-width: 800px) {
+    #photos {
+        column-count: 2;
+    }
+}
